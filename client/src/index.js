@@ -1,38 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Accueil from './components/Accueil';
-import Equipe from './components/Equipe';
-import Produits from './components/Produits';
-import Contact from './components/Contact';
 import reportWebVitals from './reportWebVitals';
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Accueil />,
-  },
-  {
-    path: "/equipe",
-    element: <Equipe />,
-  },
-  {
-    path: "produits",
-    element: <Produits />,
-  },
-  {
-    path: "contact",
-    element: <Contact />,
-  },
-]);
+import Boutique from './components/Boutique';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Boutique />
   </React.StrictMode>
 );
 

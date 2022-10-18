@@ -1,7 +1,14 @@
-const Accueil = () => {
+import ('./accueuil.css');
 
+const Accueil = () => {
     return (
-        <div>Accueil</div>
+        <div>
+            <div className="page-header">Accueuil</div>
+            <div className="landing-hero">
+                <p>Bienvenue au marché Bonne Bouffe,</p>
+                <p>un VRAI marché qui existe VRAIMENT (pour VRAI)</p>
+            </div>
+        </div>
     )
 };
 
