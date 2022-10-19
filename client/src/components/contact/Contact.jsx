@@ -1,4 +1,4 @@
-import Page from "./common/page/Page";
+import Page from "../common/page/Page";
 
 const Contact = () => {
     return (

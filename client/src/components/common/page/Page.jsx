@@ -8,20 +8,22 @@ const Page = ({children, header}) => {
     const redirect = useNavigate();
 
     useEffect(() => {
-        // if (timer === 0) {
-        //     redirect('/');
-        // }
+        if (timer === 0) {
+            redirect('/');
+        }
 
 
     }, [timer, redirect]);
     return (
-        <div className="page-container">
-            {/* {timer} */}
-            <h1 className="page-header">{header}</h1>
-            <div className="sub-container">
-                {children}
+        <>
+            <div className="app-timer">{timer}</div>
+            <div className="page-container">
+                <h1 className="page-header">{header}</h1>
+                <div className="sub-container">
+                    {children}
+                </div>
             </div>
-        </div>
+        </>
     )
 };
 

@@ -25,6 +25,7 @@
 }
 
 .nav-link:hover, .nav-link .active {
+    color: white;
     padding-bottom: 5px;
     font-weight: bolder;
     border-bottom: 2px solid white;

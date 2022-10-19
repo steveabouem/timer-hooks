@@ -43,11 +43,16 @@ body {
 
 #product-link {
     font-size: 1.1em;
-    color: rgb(173, 240, 137);
+    color: #7c5a12;
     text-decoration: none;
     padding: 5px;
-    background: black;
+    background: #cddc39;
 }
+
+#product-link:hover {
+    background:white;
+}
+
 @keyframes reveal {
     0% {
         background-color: white;
