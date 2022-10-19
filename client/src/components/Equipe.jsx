@@ -1,10 +1,9 @@
-import Page from "./common/Page";
+import Page from "./common/page/Page";
 
 const Equipe = () => {
 
     return (
-        <Page>
-            <div>Equipe</div>
+        <Page header="équipe">
         </Page>
     )
 };

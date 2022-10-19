@@ -19,9 +19,45 @@ body {
     background-repeat: no-repeat;
 }
 
+.landing-slogan {
+    background: rgb(56 56 30 / 45%);
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.landing-slogan p:first-of-type {
+    animation: lift .8s ease;
+    font-size: 2em;
+}
+
+.landing-slogan p:last-of-type {
+    animation: lift 1s ease;
+    font-size: 1.5em;
+}
+
+#product-link {
+    font-size: 1.1em;
+    color: rgb(173, 240, 137);
+    text-decoration: none;
+    padding: 5px;
+    background: black;
+}
 @keyframes reveal {
     0% {
         background-color: white;
         background-position-y: -40%;
+    }
+}
+
+@keyframes lift {
+    0% {
+        transform: translateY(30px);
+        opacity: .5;
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import Boutique from './components/Boutique';
+import Boutique from './components/boutique/Boutique';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

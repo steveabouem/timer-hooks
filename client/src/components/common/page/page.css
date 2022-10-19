@@ -1,0 +1,13 @@
+.page-container {
+    position: relative;
+    /* account for the top and bottom navs */
+    min-height: calc(100vh - 90px);
+}
+
+.page-header {
+    position: absolute;
+    color: #cddc39;
+    top: 15px;
+    left: 15%;
+    text-transform: capitalize;
+}

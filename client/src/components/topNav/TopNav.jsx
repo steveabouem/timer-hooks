@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import('./topNav.css');
 
 const links = [
     {
@@ -18,9 +19,11 @@ const links = [
 
 const TopNav = () => (
     <div className="top-navigation">
-        <div className="logo"></div>
         <div className="navbar cta-wrapper">
-            {links.map(({label, path}) => <NavLink to={path} className="">{label}</NavLink> )}
+            <NavLink to="/">
+                <div className="logo" />
+            </NavLink>
+            {links.map(({label, path}) => <NavLink key={path} to={path} className="nav-link">{label}</NavLink> )}
         </div>
     </div>
 );

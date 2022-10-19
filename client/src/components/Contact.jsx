@@ -1,9 +1,8 @@
-import Page from "./common/Page";
+import Page from "./common/page/Page";
 
 const Contact = () => {
     return (
-        <Page>
-            <div>Contact</div>
+        <Page header="contact">
         </Page>
     )
 };
