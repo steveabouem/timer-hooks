@@ -1,5 +1,6 @@
 import Page from "../common/page/Page";
 import CarteProduit from "./CarteProduit";
+import('./produits.css');
 
 const products = [
     {

@@ -2,6 +2,19 @@
     position: relative;
     /* account for the top and bottom navs */
     min-height: calc(100vh - 90px);
+    background: #cdc9a91c;
+    overflow: auto;
+}
+
+.sub-container {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
 }
 
 .page-header {
@@ -9,5 +22,27 @@
     color: #cddc39;
     top: 15px;
     left: 15%;
+    width: 70%;
     text-transform: capitalize;
+    border-bottom: 2px solid;
 }
+
+
+
+.page-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+.page-container::-webkit-scrollbar-track {
+    background: #ffec4059; 
+}
+
+.page-container::-webkit-scrollbar-thumb {
+    background: #6d6d80; 
+    border: .5px solid rgba(0, 0, 0, 0.489);
+}
+  
+.page-container::-webkit-scrollbar-thumb:hover {
+    border-color: rgb(70, 66, 66); 
+} 

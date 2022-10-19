@@ -33,20 +33,20 @@ const routes = [
 ];
 
 const Boutique = () => {
-    const appTimer = useAppTimer();
+    // const appTimer = useAppTimer();
 
-    useEffect(() => {
-        if (appTimer === 120) {
-            window.location.href = '/';
-        }
-    }, [appTimer]);
+    // useEffect(() => {
+    //     // if (appTimer === 120) {
+    //     //     window.location.href = '/';
+    //     // }
+    // }, [appTimer]);
 
     return (
         <MemoryRouter initialEntries={['/']} >
             <div className="app-container">
                 <TopNav />
                 <div className="main-container">
-                    <div className="app-timer">{appTimer}</div>
+                    {/* <div className="app-timer">{appTimer}</div> */}
                     <Routes>
                         {routes.map(({path, component}) => <Route key={path} path={path} element={component} />)}
                     </Routes> 

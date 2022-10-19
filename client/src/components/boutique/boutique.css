@@ -35,25 +35,6 @@
 .main-container {
     height: calc(100vh - 90px);
     width: 100vw;
-    overflow: hidden scroll;
+    overflow: hidden;
     margin: 45px 0;
 }
-
-
-.main-container::-webkit-scrollbar {
-    width: 10px;
-}
-
-
-.main-container::-webkit-scrollbar-track {
-    background: #ebffeb97; 
-}
-
-.main-container::-webkit-scrollbar-thumb {
-    background: white; 
-    border: .5px solid rgba(0, 0, 0, 0.489);
-}
-  
-.main-container::-webkit-scrollbar-thumb:hover {
-    border-color: rgb(70, 66, 66); 
-} 
