@@ -41,7 +41,7 @@ body {
     font-size: 1.5em;
 }
 
-#product-link {
+.product-link {
     font-size: 1.1em;
     color: #7c5a12;
     text-decoration: none;
@@ -49,7 +49,7 @@ body {
     background: #cddc39;
 }
 
-#product-link:hover {
+.product-link:hover {
     background:white;
 }
 

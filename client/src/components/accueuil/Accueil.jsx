@@ -9,7 +9,7 @@ const Accueil = () => {
                 <div className="landing-slogan">
                     <p>Bienvenue au marché Bonne Bouffe,</p>
                     <p>un VRAI marché qui existe VRAIMENT (pour VRAI)</p>
-                    <NavLink id="product-link" to="/produits">Consultez nos produits</NavLink>
+                    <NavLink className="product-link" to="/produits">Consultez nos produits</NavLink>
                 </div>
             </div>
         </div>

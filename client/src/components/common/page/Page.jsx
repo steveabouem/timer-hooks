@@ -16,7 +16,7 @@ const Page = ({children, header}) => {
     }, [timer, redirect]);
     return (
         <>
-            <div className="app-timer">{timer}</div>
+            <div className="page-timer">{timer}</div>
             <div className="page-container">
                 <h1 className="page-header">{header}</h1>
                 <div className="sub-container">

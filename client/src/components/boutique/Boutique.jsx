@@ -1,11 +1,9 @@
-import { useEffect } from 'react'
 import {
     MemoryRouter,
     Routes,
     Route,
 } from "react-router-dom";
 import Accueil from "../accueuil/Accueil";
-import useAppTimer from "../common/hooks/useAppTimer";
 import Footer from "../common/footer/Footer";
 import TopNav from '../topNav/TopNav';
 import Contact from "../contact/Contact";
@@ -33,14 +31,6 @@ const routes = [
 ];
 
 const Boutique = () => {
-    const appTimer = useAppTimer();
-
-    useEffect(() => {
-        if (appTimer === 120) {
-            window.location.href = '/';
-        }
-    }, [appTimer]);
-
     return (
         <MemoryRouter initialEntries={['/']} >
             <div className="app-container">

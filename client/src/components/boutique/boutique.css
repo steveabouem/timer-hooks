@@ -15,7 +15,7 @@
     height: 100%;
 }
 
-.app-timer {
+.page-timer {
     position: absolute;
     bottom: 10px;
     right: 20px;
@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 3px solid black;
 }
 
 .main-container {
