@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 
 const useAppTimer = () => {
     const [inactiveTime, setInactiveTime] = useState(0);
@@ -35,7 +35,6 @@ const useAppTimer = () => {
             if (!eventDetected) {
                 setInactiveTime((prev) => prev + 1)
             }
-           
 
         }, 1000);
            

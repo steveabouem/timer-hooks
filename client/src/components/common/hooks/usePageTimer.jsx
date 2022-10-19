@@ -13,8 +13,6 @@ const usePageTimer = () => {
         }, 1000);
     }, [elapsedTime]);
 
-    
-
     return elapsedTime;
 };
 
