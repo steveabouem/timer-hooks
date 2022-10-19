@@ -7,7 +7,7 @@ import Accueil from "../accueuil/Accueil";
 import Footer from "../common/footer/Footer";
 import TopNav from '../topNav/TopNav';
 import Contact from "../contact/Contact";
-import Equipe from "../Equipe";
+import Equipe from "../equipe/Equipe";
 import Produits from "../produits/Produits";
 import('./boutique.css');
 

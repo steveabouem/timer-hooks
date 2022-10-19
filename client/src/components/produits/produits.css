@@ -27,6 +27,10 @@
     padding: 0;
 }
 
+.full {
+    background-size: 100%;
+}
+
 .product-name {
     z-index: 1;
     text-transform: capitalize;

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHref } from "react-router-dom";
 import useAppTimer from "../common/hooks/useAppTimer";
 import('./topNav.css');
 
@@ -23,6 +23,7 @@ const links = [
 const TopNav = () => {
     const [width, setWidth] = useState(100);
     const appTimer = useAppTimer();
+    const currentPage = useHref();
 
     useEffect(() => {
         if (appTimer === 120) {
@@ -39,7 +40,7 @@ const TopNav = () => {
             <div className="app-timer" style={{width:`${width}%` }} />
             <div className="top-navigation">
                 <div className="navbar cta-wrapper">
-                    <NavLink to="/">
+                    <NavLink className="logo-wrapper" to="/">
                         <div className="logo" />
                     </NavLink>
                     {links.map(({label, path}) => <NavLink key={path} to={path} className="nav-link">{label}</NavLink> )}

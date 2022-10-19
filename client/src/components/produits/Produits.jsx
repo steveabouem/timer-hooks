@@ -1,5 +1,5 @@
 import Page from "../common/page/Page";
-import CarteProduit from "./CarteProduit";
+import CarteInfo from "../common/CarteInfo";
 import('./produits.css');
 
 const products = [
@@ -46,7 +46,7 @@ const Produits = () => {
     return (
         <Page header="produits">
             <div className="products-list">
-                {products.map((props) =><CarteProduit {...props} />) }
+                {products.map((props) =><CarteInfo {...props} />) }
             </div>
         </Page>
     )
