@@ -3,10 +3,11 @@ import {
     MemoryRouter,
     Routes,
     Route,
-    useLocation,
 } from "react-router-dom";
 import Accueil from "./Accueil";
 import useAppTimer from "./common/hooks/useAppTimer";
+import Footer from "./common/Footer";
+import TopNav from './common/TopNav';
 import Contact from "./Contact";
 import Equipe from "./Equipe";
 import Produits from "./Produits";
@@ -32,16 +33,21 @@ const routes = [
 const Boutique = () => {
     const appTimer = useAppTimer();
 
-    return (
-        <div>
-            {appTimer}
-            <MemoryRouter initialEntries={['/']} >
-                <Routes>
-                    {routes.map(({path, component}) => <Route path={path} element={component} />)}
-                </Routes> 
-            </MemoryRouter>
+    useEffect(() => {
+        if (appTimer === 120) {
+            window.location.href = '/';
+        }
+    }, [appTimer]);
 
-        </div>
+    return (
+        <MemoryRouter initialEntries={['/']} >
+            <TopNav />
+            {appTimer}
+            <Routes>
+                {routes.map(({path, component}) => <Route path={path} element={component} />)}
+            </Routes> 
+            <Footer />
+        </MemoryRouter>
     )
 };
 

@@ -1,7 +1,11 @@
+import Page from "./common/Page";
+
 const Equipe = () => {
 
     return (
-        <div>Equipe</div>
+        <Page>
+            <div>Equipe</div>
+        </Page>
     )
 };
 
