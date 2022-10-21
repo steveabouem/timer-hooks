@@ -2,7 +2,7 @@
 
 ## Sommaire/Summary
 #
-App test comportant 4 pages. Avec deux comptes a rebours a la fin desquels l'application est mise a jour
+App test comportant 4 pages. Avec deux comptes a rebours a la fin desquels l'application est mise a jour\
 A quick dev challenge featuring a 4 tabs SPA with custom hooks timer, managing rerouting/refreshing.
 
 
